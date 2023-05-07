@@ -25,5 +25,5 @@ Route::controller(NewsController::class)->prefix('admin')->name('news.')->group(
 
 Route::controller(SelfProfileController::class)->prefix('admin')->name('profile.')->group(function(){
   Route::get('profile/create', 'add')->name('create');
-  Route::get('profile/edit', 'create')->name('edit');
+  Route::get('profile/edit', 'edit')->name('edit');
 });
