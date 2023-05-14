@@ -44,7 +44,7 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ms-auto">
               @guest
-              
+              <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
               @else
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
